@@ -42,10 +42,12 @@ namespace ZXing.Net.Maui
 		public NativePlatformCameraPreviewView CreateNativeView()
 		{
 			previewView = new PreviewView(Context.Context);
+            // previewView.SetScaleType(PreviewView.ScaleType.FitCenter);
 			cameraExecutor = Executors.NewSingleThreadExecutor();
 
 			return previewView;
 		}
+		
 
 		public void Connect()
 		{
